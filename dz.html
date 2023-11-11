@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: url('1625538200_1-kartinkin-com-p-krasivii-fon-dlya-sushi-krasivie-foni-1.jpg') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid rgb(193, 186, 186);
+        border-radius: 15px;
+        padding: 0% 5% 1%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+    }
+
+    h2 {
+        color: rgb(193, 186, 186);
+        font-style: italic;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #inp{
+        border: 3px solid rgb(17, 187, 17);
+        border-radius: 8px;
+        background-color: rgb(94, 93, 93);
+        color: rgb(203, 201, 201);
+        width: 100%;
+    }
+
+    label{
+        color: white;
+    }
+    .inform{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inform div {
+        margin-top: 6%;
+    }
+
+    span{
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Офромление заказа</h2>
+        </div>
+        <div class="inform">
+            <form method="get">
+                <div>
+                    <label for="name">Имя:</label> <br>
+                    <input type="text" name="name" id="inp" maxlength="10"/>
+                </div>
+                <div>
+                    <label for="adress">Aдрес:</label> <br>
+                    <input type="text" name="adress" id="inp" maxlength="15"/>
+                </div>
+                <div>
+                    <label for="phone">Телефон:</label> <br>
+                    <input type="text" name="phone" id="inp" maxlength="12"/>
+                </div>
+                <div>
+                    <label for="email">Email:</label> <br>
+                    <input type="email" name="email" id="inp" maxlength="20"/>
+                </div>
+                <div> 
+                    <label>Количество палочек:</label> <br> 
+                    <input type="number" value="10" min="1" max="10"
+                     style="width: none;  border: 3px solid rgb(17, 187, 17);
+                     border-radius: 8px;
+                     background-color: rgb(94, 93, 93);
+                     color: white;"/>
+                </div>
+                <div>
+                    <label>Вид палочек:</label> <br>
+                    <span>Обычные:</span>
+                    <input type="radio"  id=""> <br>
+                    <span>Учебные:</span>
+                    <input type="radio" id="" style="margin-left: 11px;">
+                </div>
+                <div>
+                    <p style="color: white; margin-bottom: 0%;">Ваш выбор:</p>
+                    <select name="Food" size="1" style="width: none;  border: 3px solid rgb(17, 187, 17);border-radius: 8px;background-color: rgb(94, 93, 93);color: white;">
+                        <optgroup label="Суши">
+                            <option value='nig'>Нигири</option>
+                            <option value='sh' selected>Сашими</option>
+                            <option value='mk'>Маки</option>
+                            <option value='tem'>Темаки</option>
+                        </optgroup>
+                    </select>
+                    <div>
+                        <label>Нужно ли класть салфетки?:</label> <br>
+                        <span>Да:</span>
+                        <input type="radio" id="" style="margin-left: 11px;"> <br>
+                        <span>Нет:</span>
+                        <input type="radio" id="">
+                    </div>
+                    <div>
+                        <p style="color: white; margin-bottom: 1%;">Дополнительный комментарий:</p>
+                        <textarea name="comment" minlength="2" maxlength="100" id="inp"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Заказать" id="inp"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

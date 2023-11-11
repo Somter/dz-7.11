@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid rgb(193, 186, 186);
+        border-radius: 15px;
+        padding: 0% 4% 1%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+    }
+
+    h2 {
+        color: orange;
+        font-style: italic;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #inp {
+        border: 3px solid orange;
+        border-radius: 8px;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+
+    label {
+        color: orange;
+    }
+
+    .inform {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inform div {
+        margin-top: 6%;
+    }
+
+    span {
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Регистрация</h2>
+        </div>
+        <div class="inform">
+            <form method="get">
+                <div>
+                    <label for="name">Ник:</label> <br>
+                    <input type="text" name="name" id="inp" maxlength="10" />
+                </div>
+                <div>
+                    <label for="email">Email:</label> <br>
+                    <input type="email" name="email" id="inp" maxlength="20" />
+                </div>
+             <div>
+                <label for="email">Дата роождения:</label> <br>
+                <input type="date" id="inp"/>
+             </div>
+             <div>
+                <label>Пол:</label> <br>
+                <span>Мужсокй</span>
+                <input type="radio" id=""> <br>
+                <span>Женский</span>
+                <input type="radio" id="" style="margin-left: 8px;">
+            </div>
+            <p style="color: white; margin-bottom: 0%;">Страна:</p>
+            <select name="City" size="1" id="inp">
+                <optgroup label="Страна">
+                    <option value='od'>Украина</option>
+                    <option value='kv' selected>США</option>
+                    <option value='lv'>Япония</option>
+                    <option value='dp'>Франция</option>
+                </optgroup>
+            </select>
+
+            <div>
+                <p style="color: white; margin-bottom: 0%;">Тип героя:</p>
+                <select name="City" size="1" id="inp">
+                    <optgroup label="Страна">
+                        <option value='od'>Обычный</option>
+                        <option value='kv' selected>Необычный</option>
+                        <option value='lv'>Почти обычный</option>
+                        <option value='dp'>Почти необычный</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label>Игровой опыт в годах:</label> <br> 
+                <input type="number" value="10" min="0" max="60" 
+                style=" border: 3px solid orange;
+                border-radius: 8px;
+                background-color: black;
+                color: white;"
+                />
+            </div>
+            <div>
+                <input type="submit" value="Заргестрироваться" id="inp"/>
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
